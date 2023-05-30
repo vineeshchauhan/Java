@@ -1,8 +1,9 @@
 package creational.abstractfactory;
 
 /**
- * Top interface of Chair, Sofa and CoffeeTable
- *               Modern   Victorian
+ * Top interface of            Chair, Sofa and CoffeeTable
+ *                   Modern   
+ *                   Victorian
  *   Chair
  *   Sofa
  *   CoffeeTable
