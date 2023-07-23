@@ -12,14 +12,14 @@ public class HigherOrderFunction {
 				(function1) -> (x, y) -> {
 					if (y == 0f) {
 						System.out.println("Divide by 0f is not allowed");
-						return 0f;
+						return 0f; // returning float
 					}
-					return function1.apply(x, y);
+					return function1.apply(x, y); // returning float
 				};
 
 		BiFunction<Float, Float, Float> f = safeDivide.apply(divide);
-
-		System.out.println(f.apply(40f, 20f));
+		System.out.println("Test");
+		System.out.println(f.apply(40f, 0f));
 
 	}
 
