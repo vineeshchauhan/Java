@@ -26,6 +26,9 @@ public class MapFunctionInJavaStream {
 		List<String> listOfAfricanCountries = Arrays.asList("South Africa", "Morocco", "Ghana", "Nigeria","Ivery Coast");
 
 		List<List<String>> listOfCountries = Arrays.asList(listOfAsianCountries, listOfAfricanCountries);
+		
+		System.out.println(listOfCountries);
+		System.out.println(listOfCountries.stream().flatMap(c -> c.stream().distinct()).collect(Collectors.toList()));
 
 		System.out.println(listOfCountries.stream().flatMap(c -> c.stream()).anyMatch(c -> c.equals("Nepal")));
 
